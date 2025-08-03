@@ -27,9 +27,10 @@ class ChatController {
 	private final OllamaChatModel agentModel;
 	private final OllamaChatModel ragModel;
 
-	public ChatController(OllamaChatModel chatModel,
-						  @ModelName("agent") OllamaChatModel agentModel,
-						  @ModelName("rag") OllamaChatModel ragModel
+	public ChatController(
+		OllamaChatModel chatModel,
+		@ModelName("agent") OllamaChatModel agentModel,
+		@ModelName("rag") OllamaChatModel ragModel
 	) {
 		this.chatModel = chatModel;
 		this.agentModel = agentModel;

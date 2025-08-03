@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demo
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options: # default ChatModel instance config
+          model: qwen3:4b
+          temperature: 0.7
+        models: # map of named ChatModel instance configs
+          agent: # named ChatModel instance config
+            options:
+              model: qwen3:8b
+              temperature: 0.0
+          rag: # named ChatModel instance config
+            options:
+              model: gemma3:4b
+              temperature: 0.2

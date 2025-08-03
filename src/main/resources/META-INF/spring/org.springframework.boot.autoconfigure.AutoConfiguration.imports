@@ -1,0 +1,2 @@
+com.thomasvitale.demo.autoconfigure.api.OllamaApiAutoConfiguration
+com.thomasvitale.demo.autoconfigure.chat.OllamaChatAutoConfiguration

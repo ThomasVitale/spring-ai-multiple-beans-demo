@@ -37,17 +37,17 @@ class ChatController {
 	}
 
 	@GetMapping("/chat")
-	public String chat(@RequestParam("question") String question) {
+	public String chat(@RequestParam(name = "question", defaultValue = "What's the capital of Denmark?") String question) {
 		return chatModel.call(question);
 	}
 
 	@GetMapping("/chat/agent")
-	public String agent(@RequestParam("question") String question) {
+	public String agent(@RequestParam(name = "question", defaultValue = "What's the capital of Denmark?") String question) {
 		return agentModel.call(question);
 	}
 
 	@GetMapping("/chat/rag")
-	public String rag(@RequestParam("question") String question) {
+	public String rag(@RequestParam(name = "question", defaultValue = "What's the capital of Denmark?") String question) {
 		return ragModel.call(question);
 	}
 	

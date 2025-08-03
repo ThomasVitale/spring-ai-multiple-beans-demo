@@ -16,3 +16,11 @@ The goal of this project is to experiment with the new features and lay the foun
 ```shell
 ./gradlew bootRun
 ```
+
+## How to test
+
+You can test the application by sending HTTP GET requests to the following endpoints:
+
+- `http://localhost:8080/chat` - Uses the default chat model Qwen 3 4B (generic chat tasks)
+- `http://localhost:8080/chat/agent` - Uses the Qwen 3 8B model (specific for ficticious agentic tasks)
+- `http://localhost:8080/chat/rag` - Uses the Gemma 3 4B model (specific for ficticious RAG tasks)
